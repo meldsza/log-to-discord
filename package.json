@@ -10,7 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "request": "^2.79.0",
-    "request-promise-native": "^1.0.3"
+    "request-promise-native": "^1.0.3",
+    "tail": "^1.2.2"
   },
   "devDependencies": {},
   "repository": {

@@ -1,6 +1,6 @@
 {
   "name": "log-to-discord",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Tails logs and posts to discord",
   "main": "index.js",
   "bin": {

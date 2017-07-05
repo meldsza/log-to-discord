@@ -1,7 +1,8 @@
-let webhookurl = process.env.WEBHOOKURL;
-let logfile = process.env.LOGFILE;
-let request = require('request-promise-native');
-const spawn = require('child_process').spawn;
+const webhookurl = process.env.WEBHOOKURL;
+const logfile = process.env.LOGFILE;
+const request = require('request-promise-native');
+const Tail = require('tail').Tail;
+let logp = new Tail(logfile,{follow: true});
 
 postToDiscord = async function(message){
   if(message.length>=2000)
@@ -25,10 +26,9 @@ postToDiscord = async function(message){
       });
   }
 }
-let logp = spawn('tail -f -n 0', [logfile]);
 logp.on('exit', (code, signal) => {
     console.log('LOGS EXIT');
 })
 
-logp.stderr.on('data',postToDiscord)
-logp.stdout.on('data',postToDiscord)
+logp.on('line',postToDiscord);
+logp.on("error",postToDiscord);

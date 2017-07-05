@@ -1,0 +1,24 @@
+{
+  "name": "log-to-discord",
+  "version": "1.0.0",
+  "description": "Tails logs and posts to discord",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Melroy",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.79.0",
+    "request-promise-native": "^1.0.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meldsza/log-to-discord.git"
+  },
+  "bugs": {
+    "url": "https://github.com/meldsza/log-to-discord/issues"
+  },
+  "homepage": "https://github.com/meldsza/log-to-discord#readme"
+}

@@ -4,7 +4,7 @@
   "description": "Tails logs and posts to discord",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "log-to-discord": "node index.js"
   },
   "author": "Melroy",
   "license": "MIT",

@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "Tails logs and posts to discord",
   "main": "index.js",
-  "scripts": {
+  "bin": {
     "log-to-discord": "node index.js"
   },
   "author": "Melroy",

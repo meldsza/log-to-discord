@@ -9,8 +9,7 @@
   "author": "Melroy",
   "license": "MIT",
   "dependencies": {
-    "request": "^2.79.0",
-    "request-promise-native": "^1.0.3",
+    "axios": "^0.19.2",
     "tail": "^1.2.2"
   },
   "devDependencies": {},
